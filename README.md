@@ -1,5 +1,6 @@
 # React Div Hover Slider
-![image](https://github.com/user-attachments/assets/941e2286-f86a-4a27-a551-2ca5a884bd86)
+![image](https://github.com/user-attachments/assets/0e39cbf7-c091-431d-b1c2-eac23199224b)
+
 
 This project is a simple React-based slider that displays div elements when hovered over. It showcases how to create an interactive UI element using React, CSS, and state management.
 

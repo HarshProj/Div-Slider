@@ -1,12 +1,10 @@
 .carousel-container {
     display: flex;
     justify-content: center;
-    /* gap: 20px; */
-    border: 2px solid gray;
     width: 80%;
     height: 50vh;
     margin: 20px;
-    
+    border: 1px solid black;
     border-radius: 20px;
   }
   .first{
@@ -26,6 +24,7 @@
     position: absolute;
     margin-left: 10px;
     color: #ffff;
+    backdrop-filter: blur(1px);
 }
 .section-right{
     position: absolute;
@@ -33,6 +32,13 @@
     /* display: ; */
     padding: 10px;
     color: #ffff;
+    display: none;
+}
+.carousel-item:hover{
+
+    .section-right{
+        display: block;
+    }
 }
 .carousel-item div {
     width: 100%;
@@ -47,4 +53,13 @@
   .carousel-item:not(.active) {
     flex: 1;
   }
-  
+  @media screen and (max-width: 480px) {
+    .carousel-container {
+        transform: rotate(90deg) ;
+        height: 30vh;
+        width: 60vh;
+        font-size: xx-small;
+    }
+
+    
+}

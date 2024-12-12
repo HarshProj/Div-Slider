@@ -6,7 +6,7 @@ export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const images = [
-    'assets/strength2.jpg','assets/drills.jpg','assets/mobility.jpg'
+    'assets/strength2.jpg','assets/mobility.jpg','assets/drills1.jpg'
   ];
 
   const handleMouseEnter = (index) => {
@@ -24,7 +24,7 @@ export const Carousel = () => {
           onMouseEnter={() => handleMouseEnter(index)}
         >
           <h2 className="section">{index==0?"STRENGTH":(index===1?"MOBILITY":"DRILLS")}</h2>
-          <span className={`section-right `} style={{display:`${activeIndex === index ? "block" : "none"}`}}><SkipForwardCircle size={30} weight='fill' onClick={handleclick}/></span>
+          <span className={`section-right `} ><SkipForwardCircle size={30} weight='fill' onClick={handleclick}/></span>
           <div style={{backgroundImage:`url(${image})`}} className={`${index===0?"first":""} ${index===(images.length-1)?"last":""}`} />
         </div>
       ))}
